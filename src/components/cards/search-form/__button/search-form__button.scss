@@ -1,0 +1,16 @@
+.search-form__button {
+	--button-height: 30px;
+	display: block;
+	height: var(--button-height);
+	width: 200px;
+	/* border: 1px solid black; */
+	border-radius: calc(var(--button-height) / 2);
+	/* font-size: 12pt; */
+	text-transform: uppercase;
+	color: white;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.search-form__button:hover {
+	opacity: 0.5;
+}

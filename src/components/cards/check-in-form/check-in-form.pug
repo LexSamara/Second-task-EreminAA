@@ -1,0 +1,52 @@
+form.check-in-form
+  div.top-wrapper
+    p(
+      class='check-in-form check-in-form__room-number'
+    ) №888
+    p(
+      class='check-in-form check-in-form__room-type'
+    ) люкс
+
+    p(
+      class='check-in-form check-in-form__room-price'
+    ) 9 990₽ в сутки
+
+  div.in-out-wrapper
+    label.search-form__label Прибытие
+      input.search-form__input(
+        type='date'
+      )
+    label.search-form__label Выезд
+      input.search-form__input(
+        type='date'
+      )
+    label.search-form__label Гости
+      input.search-form__input(
+        type='date'
+      )
+
+  table.search-form__table
+    caption(
+      class='search-form__caption, visually-hidden'
+    ) Price calculation
+    tr.search-form__table-row
+      td.search-form__table-data 9 990₽ x 4 суток
+      td.search-form__table-data 39 960₽
+    tr.search-form__table-row
+      td.search-form__table-data Сбор за устуги: скидка 2 179₽
+      td.search-form__table-data i
+      td.search-form__table-data 0₽
+    tr.search-form__table-row
+      td.search-form__table-data Сбор за дополгительные услуги
+      td.search-form__table-data i
+      td.search-form__table-data 300₽
+    tr.search-form__table-row
+      td.search-form__table-data Итого
+      td.search-form__table-data ...
+      td.search-form__table-data 38 081₽
+
+  button.search-form__button(
+    type='submit'
+  ) Забронировать
+
+

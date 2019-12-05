@@ -1,0 +1,41 @@
+@import './global.scss';
+@import './components/cards/search-form/search-form.scss';
+@import './components/cards/check-in-form/check-in-form.scss';
+
+body {
+  max-width: 1440px;
+  min-height: 1350px;
+  margin: 0 auto;
+}
+
+.components-wrapper {
+  margin: 0;
+  padding: 0;
+  min-width: 1160px;
+  min-height: 1060px;
+  margin-top: 150px;
+  display: flex;
+  outline: 2px solid blue;
+}
+
+.components-wrapper-1,
+.components-wrapper-2,
+.components-wrapper-3 {
+  outline: 1px dotted green;
+}
+
+.components-wrapper-1 {
+  min-width: 380px;
+  margin-left: 140px;
+}
+
+.components-wrapper-2 {
+  min-width: 380px;
+  margin-left: 40px;
+}
+
+.components-wrapper-3 {
+  min-width: 320px;
+  margin-left: 40px;
+}
+
