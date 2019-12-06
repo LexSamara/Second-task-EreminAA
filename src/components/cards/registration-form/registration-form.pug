@@ -1,0 +1,75 @@
+form.registration-form
+  p.registration-form__title Регистрация аккаунта
+    input(
+      class='registration-form__input'
+      placeholder='Имя'
+    )
+    input(
+      class='registration-form__input'
+      placeholder='Фамилия'
+    )
+    fieldset.registration-form__fieldset
+      ul.registration-form__list
+        li.ragistration-form__item
+          label.registration-form__label Мужчина
+            input(
+              class='registration-form__input-radio'
+              type='radio'
+              name='sex'
+              value='male'
+              checked
+            )
+
+        li.ragistration-form__item
+          label.registration-form__label Женщина
+            input(
+              class='registration-form__input-radio'
+              type='radio'
+              name='sex'
+              value='female'
+            )
+
+    fieldset.registration-form__fieldset
+      legend.registration-form__legend Дата рождения
+        input(
+          class='ragistration-form__input'
+          type='date'
+        )
+
+    fieldset.registration-form__fieldset
+      legend.regidtration-form__legend Данные для входа в сервис
+        input(
+          class='registration-form__input'
+          type='email'
+          placeholder='Email'
+        )
+        input(
+          class='ragistration-form__input'
+          type='password'
+          placeholder='Пароль'
+        )
+
+    div.registraion-form__input-checkbox-wrapper
+      label.registration-form__label Получать спецпредложения
+        input(
+          class='registration-form__input-checkbox'
+          type='checkbox'
+          name='Special-offer'
+        )
+
+    button(
+      class='registration-form__button'
+      type='submit'
+    ) Перейти к оплате
+
+    div.registration-form__inlet-button-wrapper
+      p.registration-form__text Уже есть аккаунт на Toxin
+      button(
+        class='registration-form__button-inlet'
+        type='button'
+      ) Войти
+
+
+
+
+
