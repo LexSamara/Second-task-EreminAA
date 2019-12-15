@@ -1,4 +1,4 @@
-import './components.scss';
+import './scss/style.scss';
 
 
 // import { renderComponent } from './utils.js';

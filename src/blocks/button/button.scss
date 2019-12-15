@@ -1,0 +1,21 @@
+.button {
+  display: block;
+  height: 44px;
+  width: 320px;
+  border: none;
+  border-radius: 22px;
+
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: white;
+
+}
+
+.button:hover {
+  opacity: 0.5;
+}

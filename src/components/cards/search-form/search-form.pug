@@ -1,18 +1,26 @@
 form.search-form
-  legend.search-form__legend Найдем номера под ваши пожелания
+  h1(
+    class='title search-form__title'
+  ) Найдем номера под ваши пожелания
+  //- Найдем номера под ваши пожелания
+
   label.search-form__label Прибытие
     input.search-form__input(
       type='date'
     )
+
   label.search-form__label Выезд
     input.search-form__input(
       type='date'
     )
+
   label.search-form__label Гости
     select.search-form__select
       option.search-form__option 3 Гостя
       option.search-form__option 2 Гостя
       option.search-form__option 1 Гость
-  button.search-form__button(
+
+  button(
+    class='button'
     type='submit'
   ) Подобрать номер
