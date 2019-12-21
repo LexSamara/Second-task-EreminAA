@@ -1,0 +1,24 @@
+@import './_date-text/input__field_date-text_uppercase.scss';
+
+.input__field {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+
+  height: 44px;
+  width: 320px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+
+  font-family: Montserrat, sens-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  background-color: white;
+  text-align: left;
+
+    &:hover {
+      border: 1px solid rgba(31, 32, 65, 0.75);;
+    }
+}

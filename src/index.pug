@@ -4,10 +4,16 @@ html(lang='ru')
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
-    title Document
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    title Мой учебный проект №2
   body
     h1.visually-hidden Components
-    section.components-wrapper
+
+    section.components
+      h2(
+        class='sub-title auxiliary'
+      ) Cards
+
       .components-wrapper-1
         include components/cards/search-form/search-form.pug
         include components/cards/registration-form/registration-form.pug
@@ -16,6 +22,14 @@ html(lang='ru')
         include components/cards/enter-form/enter-form.pug
       .components-wrapper-3
         include components/cards/calendar/calendar.pug
+
+    section.form-elements
+      h2(
+        class='sub-title auxiliary'
+      ) Form-elements
+
+      .elements-wrapper-1
+        include blocks/input/input.pug
 
 
 

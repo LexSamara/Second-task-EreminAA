@@ -1,0 +1,49 @@
+div.input
+  label(
+    class='label-cta'
+    for='input-field-1'
+  ) text-field
+  input(
+    class='input__field'
+    id='input-field-1'
+    type='email'
+    placeholder='Email'
+  )
+
+div.input
+  label(
+    class='label-cta'
+    for='input-field-2'
+  ) text-field
+  input(
+    class='input__field'
+    id='input-field-2'
+    type='text'
+    placeholder='This is pretty awesome'
+  )
+
+div(
+  class='input'
+)
+  label(
+    class='label-cta label__dropdown'
+  ) dropdown
+  div(
+    class='input__dropdown-field'
+  )
+    p.text-content This is pretty awesome
+    span(
+      class='input__dropdown-marker'
+    ) expand_more
+
+div.input
+  label(
+    class='label-cta'
+    for='input-field-3'
+  ) masked text field
+  input(
+    class='input__field input__field_date-text_uppercase'
+    id='input-field-3'
+    type='date'
+  )
+

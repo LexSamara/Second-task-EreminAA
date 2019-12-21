@@ -1,0 +1,15 @@
+@import './__field/input__field.scss';
+@import './__dropdown-field/input__dropdown-field.scss';
+@import './__dropdown-marker/input__dropdown-marker.scss';
+
+.input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  margin-bottom: 20px;
+}
+
+
+
+

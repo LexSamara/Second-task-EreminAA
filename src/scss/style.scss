@@ -2,9 +2,14 @@
 @import './fonts.scss';
 
 @import '../components/components.scss';
+@import '../components/form-elements/form-elements.scss';
 
+@import '../blocks/text-content/text-content.scss';
 @import '../blocks/title/title.scss';
+@import '../blocks/sub-tite/sub-title.scss';
 @import '../blocks/button/button.scss';
+@import '../blocks/label-cta/label-cta.scss';
+@import '../blocks/input/input.scss';
 
 @import '../components/cards/search-form/search-form.scss';
 @import '../components/cards/check-in-form/check-in-form.scss';
