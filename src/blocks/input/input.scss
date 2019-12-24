@@ -1,5 +1,6 @@
 @import './__field/input__field.scss';
-@import './__dropdown-field/input__dropdown-field.scss';
+@import './__label-cta/input__label-cta.scss';
+@import './__text-content/input__text-content.scss';
 @import './__dropdown-marker/input__dropdown-marker.scss';
 
 .input {
@@ -10,6 +11,10 @@
   margin-bottom: 20px;
 }
 
+.data-dropdown-wrapper {
+  // outline: 1px solid red;
+}
 
+@import './_reset/input_reset.scss';
 
 
