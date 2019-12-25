@@ -29,8 +29,13 @@ html(lang='ru')
       ) Form-elements
 
       .elements-wrapper-1
-        include blocks/input/mixin.pug
-        include blocks/input/input.pug
+        include pug/mixins.pug
+        include components/form-elements/input-email/input-email.pug
+        include components/form-elements/input-text-field/input-text-field.pug
+        include components/form-elements/input-masked-text-field/input-masked-text-field.pug
+        //- include blocks/input/input.pug
+
+        include blocks/dropdown/dropdown-mixin.pug
         //- //- include blocks/input/input.pug
 
 

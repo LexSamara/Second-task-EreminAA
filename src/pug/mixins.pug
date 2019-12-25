@@ -1,0 +1,17 @@
+mixin input(label, type, placeholder)
+  if inputType == 'date'
+    .input
+      label.label-cta.input__label-cta= label
+        input(
+          class='input__field input__field_date-text_uppercase input_text-opacity_light'
+          type= type
+          placeholder= placeholder
+        )
+  else
+    .input
+      label.label-cta.input__label-cta= label
+        input(
+          class='input__field'
+          type= type
+          placeholder= placeholder
+        )
