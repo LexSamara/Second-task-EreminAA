@@ -3,7 +3,7 @@ mixin input(label, type, placeholder)
     .input
       label.label-cta.input__label-cta= label
         input(
-          class='input__field input__field_date-text_uppercase input_text-opacity_light'
+          class='text-field text-field_text-style_uppercase input_text-opacity_light'
           type= type
           placeholder= placeholder
         )
@@ -11,7 +11,15 @@ mixin input(label, type, placeholder)
     .input
       label.label-cta.input__label-cta= label
         input(
-          class='input__field'
+          class='text-field'
           type= type
           placeholder= placeholder
         )
+
+mixin dropdown(label, text)
+  .dropdown
+    p.label-cta.dropdown__label-cta= label
+    .text-field
+      p.text-content.input__text-content= text
+      span.dropdown-marker expand_more
+

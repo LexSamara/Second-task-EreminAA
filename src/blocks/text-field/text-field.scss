@@ -1,4 +1,4 @@
-.input__field {
+.text-field {
   position: relative;
   height: 44px;
   width: 320px;
@@ -26,5 +26,5 @@
     }
 }
 
-@import './_date-text/input__field_date-text_uppercase.scss';
-@import './_width/input__field_width_date-dropdown.scss';
+@import './_text-style/text-field_text-style_uppercase.scss';
+@import './_width/text-field_width_date-dropdown.scss';
