@@ -1,4 +1,24 @@
-+input('text field', 'text', 'text')
+//- +input('text field', 'text', 'text')
+
+mixin input(options)
+  if !options
+    - optons = {}
+
+  .input
+    label.label-cta.input__label-cta
+      if options.label
+        = options.label
+      -
+        var classes = ''
+        classes += options.name === 'masked-text' ? 'text-field_text-style_uppercase' : ''
+      input.text-field(
+        class= classes
+        type = options.type
+        name = options.name
+        placeholder = options.placeholder
+      )
+
+//-  input_text-opacity_light
 
 
 

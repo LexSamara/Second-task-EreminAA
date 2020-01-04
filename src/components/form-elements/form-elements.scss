@@ -9,6 +9,8 @@
 }
 
 .elements-wrapper-1 {
+  display: flex;
+  flex-direction: column;
   min-width: 340px;
   margin-left: 80px;
   outline: 1px dotted red;
