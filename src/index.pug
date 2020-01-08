@@ -29,15 +29,12 @@ html(lang='ru')
       ) Form-elements
 
       .elements-wrapper-1
-        //- include pug/mixins.pug
-        //- include components/form-elements/input-email/input-email.pug
-        //- include components/form-elements/input-text-field/input-text-field.pug
-        //- include components/form-elements/input-masked-text-field/input-masked-text-field.pug
-        //- include components/form-elements/dropdown-masked-text/dropdown-masked-text.pug
-        //- include components/form-elements/dropdown-date/dropdown-date.pug
         include blocks/input/input
+        include blocks/dropdown/dropdown
         +input({type: 'email', name: 'email', placeholder: 'Email', label: 'text field'})
         +input({type: 'text', name: 'text', placeholder: 'This is pretty awesome', label: 'text field'})
+        +dropdown({label: 'dropdown', textContent: 'Сколько гостей'})
         +input({type: 'text', name: 'masked-text', placeholder: 'дд.мм.гггг', label: 'masked text field'})
+        +dropdown({label: 'date dropdown', textContent: 'дд.мм.гггг'})
 
     script(src='./main.js')

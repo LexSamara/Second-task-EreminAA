@@ -1,0 +1,18 @@
+mixin dropdown(options)
+  if !options
+    - optons = {}
+
+  .dropdown
+    p.label-cta.input__label-cta
+      if options.label
+        = options.label
+    -
+      var classes = ''
+      classes += options.label === 'date dropdown' || options.label === 'прибытие' || options.label === 'выезд'? 'text-field_text-style_uppercase' : ''
+    .text-field(
+      class= classes
+    )
+      p.text-content= options.textContent
+      span.dropdown-marker expand_more
+
+
