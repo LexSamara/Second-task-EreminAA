@@ -9,9 +9,11 @@ mixin dropdown(options)
     -
       var classes = ''
       classes += options.label === 'date dropdown' || options.label === 'прибытие' || options.label === 'выезд'? 'text-field_text-style_uppercase' : ''
+    - var fieldWidth = 'width: ' + options.width + 'px'
+
     .text-field(
       class= classes
-    )
+    )(style= fieldWidth)
       p.text-content= options.textContent
       span.dropdown-marker expand_more
 
