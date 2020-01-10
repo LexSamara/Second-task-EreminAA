@@ -1,6 +1,4 @@
 @import './__label-cta/input__label-cta.scss';
-@import './__text-content/input__text-content.scss';
-@import './__dropdown-marker/input__dropdown-marker.scss';
 
 .input {
   display: flex;
@@ -10,10 +8,4 @@
   margin-bottom: 20px;
 }
 
-.data-dropdown-wrapper {
-  // outline: 1px solid red;
-}
-
-@import './_reset/input_reset.scss';
-@import './_text-opacity/input_text-opacity_light.scss';
 

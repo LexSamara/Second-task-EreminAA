@@ -14,4 +14,13 @@
   min-width: 340px;
   margin-left: 80px;
   outline: 1px dotted red;
+
+  .dropdown-wrapper {
+    width: 320px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }

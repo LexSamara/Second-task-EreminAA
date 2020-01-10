@@ -1,0 +1,17 @@
+.subscription__marker {
+  width: 44px;
+  height: 44px;
+
+  flex-shrink: 0;
+
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-size: 24px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: lowercase;
+
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

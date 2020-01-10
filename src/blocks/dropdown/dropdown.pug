@@ -3,18 +3,25 @@ mixin dropdown(options)
     - optons = {}
 
   .dropdown
-    p.label-cta.input__label-cta
+    p.label-cta.dropdown__label-cta
       if options.label
         = options.label
     -
       var classes = ''
       classes += options.label === 'date dropdown' || options.label === 'прибытие' || options.label === 'выезд'? 'text-field_text-style_uppercase' : ''
-    - var fieldWidth = 'width: ' + options.width + 'px'
+      var fieldWidth = 'width: ' + options.width + 'px'
 
     .text-field(
-      class= classes
-    )(style= fieldWidth)
-      p.text-content= options.textContent
-      span.dropdown-marker expand_more
+      style= fieldWidth
+    )
+      input.dropdown__text-content(
+        class= classes
+        type = options.type
+        name = options.name
+        value = options.value
+        placeholder = options.placeholder
+        pattern = options.pattern
+      )
+      span.dropdown__marker expand_more
 
 

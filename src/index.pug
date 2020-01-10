@@ -31,10 +31,61 @@ html(lang='ru')
       .elements-wrapper-1
         include blocks/input/input
         include blocks/dropdown/dropdown
-        +input({type: 'email', name: 'email', placeholder: 'Email', label: 'text field'})
-        +input({type: 'text', name: 'text', placeholder: 'This is pretty awesome', label: 'text field'})
-        +dropdown({label: 'dropdown', textContent: 'Сколько гостей'})
-        +input({type: 'text', name: 'masked-text', placeholder: 'дд.мм.гггг', label: 'masked text field'})
-        +dropdown({label: 'date dropdown', textContent: 'дд.мм.гггг', width: '150'})
+        include blocks/subscription/subscription
+        +input({
+          type: 'email',
+          name: 'email',
+          placeholder: 'Email',
+          label: 'text field',
+          width: '320'
+        })
+        +input({
+          type: 'text',
+          name: 'text',
+          placeholder: 'This is pretty awesome',
+          label: 'text field',
+          width: '320'
+        })
+        +dropdown({
+          type: 'text',
+          name: 'text',
+          placeholder: 'Сколько гостей',
+          label: 'dropdown',
+          width: '320'
+        })
+        +input({
+          type: 'text',
+          name: 'masked-text',
+          placeholder: 'дд.мм.гггг',
+          label: 'masked text field',
+          width: '320'
+        })
+        .dropdown-wrapper
+          +dropdown({
+            type: 'text',
+            name: 'date',
+            label: 'date dropdown',
+            placeholder: 'дд.мм.гггг',
+            pattern: '[0-9]{2}.[0-9]{2}.[0-9]{4}',
+            width: '150'
+          })
+          +dropdown({
+            type: 'text',
+            name: 'date',
+            label: 'date dropdown',
+            placeholder: '19.08.2019',
+            width: '150'
+          })
+        +dropdown({
+          type: 'text',
+          name: 'text',
+          label: 'filter date dropdown',
+          placeholder: '19 авг - 23 авг',
+          width: '266'
+        })
+        +subscription({
+          label: 'subscription text field',
+          width: '266'
+        })
 
     script(src='./main.js')

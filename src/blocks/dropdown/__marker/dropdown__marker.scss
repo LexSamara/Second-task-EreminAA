@@ -1,19 +1,15 @@
-.dropdown-marker {
-  display: inline-block;
+.dropdown__marker {
   width: 44px;
   height: 44px;
 
-  padding-top: 8px;
+  flex-shrink: 0;
 
   font-family: 'Material Icons';
   font-style: normal;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 44px;
   text-align: center;
-  vertical-align: middle;
   text-transform: lowercase;
 
   color: rgba(31, 32, 65, 0.75);
-
-  // outline: 1px dotted green;
 }

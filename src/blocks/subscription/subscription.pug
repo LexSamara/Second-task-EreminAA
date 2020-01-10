@@ -1,0 +1,19 @@
+mixin subscription(options)
+  if !options
+    - optons = {}
+
+  .subscription
+    p.label-cta.subscription__label-cta
+      if options.label
+        = options.label
+    - var fieldWidth = 'width: ' + options.width + 'px'
+
+    .text-field(
+      style= fieldWidth
+    )
+      input.subscription__text-content(
+        type = 'email'
+        name = 'email'
+        placeholder = 'Email'
+      )
+      span.subscription__marker arrow_forward

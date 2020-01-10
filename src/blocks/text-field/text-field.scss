@@ -1,9 +1,9 @@
 .text-field {
   position: relative;
   height: 44px;
-  width: 320px;
 
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
 

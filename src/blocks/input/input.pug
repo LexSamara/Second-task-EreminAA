@@ -9,14 +9,16 @@ mixin input(options)
       -
         var classes = ''
         classes += options.name === 'masked-text' ? 'text-field_text-style_uppercase' : ''
+        var fieldWidth = 'width: ' + options.width + 'px'
+
       input.text-field(
+        style= fieldWidth
         class= classes
         type = options.type
         name = options.name
         placeholder = options.placeholder
       )
 
-//-  input_text-opacity_light
 
 
 
