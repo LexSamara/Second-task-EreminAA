@@ -3,7 +3,9 @@ mixin input(options)
     - optons = {}
 
   .input
-    label.label-cta.input__label-cta
+    label.label-cta.input__label-cta(
+      for = options.id
+    )
       if options.label
         = options.label
       -
@@ -11,13 +13,14 @@ mixin input(options)
         classes += options.name === 'masked-text' ? 'text-field_text-style_uppercase' : ''
         var fieldWidth = 'width: ' + options.width + 'px'
 
-      input.text-field(
-        style= fieldWidth
-        class= classes
-        type = options.type
-        name = options.name
-        placeholder = options.placeholder
-      )
+    input.text-field(
+      style= fieldWidth
+      class= classes
+      id = options.id
+      type = options.type
+      name = options.name
+      placeholder = options.placeholder
+    )
 
 
 

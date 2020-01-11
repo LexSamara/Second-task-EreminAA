@@ -9,83 +9,110 @@ html(lang='ru')
   body
     h1.visually-hidden Components
 
-    section.components
-      h2(
-        class='sub-title auxiliary'
-      ) Cards
+    //- section.components
+    //-   h2(
+    //-     class='sub-title auxiliary'
+    //-   ) Cards
 
-      .components-wrapper-1
-        include components/cards/search-form/search-form.pug
-        include components/cards/registration-form/registration-form.pug
-      .components-wrapper-2
-        include components/cards/check-in-form/check-in-form.pug
-        include components/cards/enter-form/enter-form.pug
-      .components-wrapper-3
-        include components/cards/calendar/calendar.pug
+    //-   .components-wrapper-1
+    //-     include components/cards/search-form/search-form.pug
+    //-     include components/cards/registration-form/registration-form.pug
+    //-   .components-wrapper-2
+    //-     include components/cards/check-in-form/check-in-form.pug
+    //-     include components/cards/enter-form/enter-form.pug
+    //-   .components-wrapper-3
+    //-     include components/cards/calendar/calendar.pug
 
     section.form-elements
       h2(
-        class='sub-title auxiliary'
+        class='sub-title auxiliary visually-hidden'
       ) Form-elements
 
       .elements-wrapper-1
         include blocks/input/input
         include blocks/dropdown/dropdown
         include blocks/subscription/subscription
-        +input({
-          type: 'email',
-          name: 'email',
-          placeholder: 'Email',
-          label: 'text field',
-          width: '320'
-        })
-        +input({
-          type: 'text',
-          name: 'text',
-          placeholder: 'This is pretty awesome',
-          label: 'text field',
-          width: '320'
-        })
-        +dropdown({
-          type: 'text',
-          name: 'text',
-          placeholder: 'Сколько гостей',
-          label: 'dropdown',
-          width: '320'
-        })
-        +input({
-          type: 'text',
-          name: 'masked-text',
-          placeholder: 'дд.мм.гггг',
-          label: 'masked text field',
-          width: '320'
-        })
-        .dropdown-wrapper
+        .form-elements__input-1
+          +input({
+            type: 'email',
+            id: 'input-1',
+            name: 'email',
+            placeholder: 'Email',
+            label: 'text field',
+            width: '320'
+          })
+        .form-elements__input-2
+          +input({
+            type: 'text',
+            id: 'input-2',
+            name: 'text',
+            placeholder: 'This is pretty awesome',
+            label: 'text field',
+            width: '320'
+          })
+        .form-elements__dropdown-1
           +dropdown({
             type: 'text',
-            name: 'date',
-            label: 'date dropdown',
+            name: 'text',
+            placeholder: 'Сколько гостей',
+            label: 'dropdown',
+            width: '320'
+          })
+        .form-elements__input-3
+          +input({
+            type: 'text',
+            id: 'input-3',
+            name: 'masked-text',
             placeholder: 'дд.мм.гггг',
-            pattern: '[0-9]{2}.[0-9]{2}.[0-9]{4}',
-            width: '150'
+            label: 'masked text field',
+            width: '320'
           })
+        .dropdown-wrapper
+          .form-elements__dropdown-2
+            +dropdown({
+              type: 'text',
+              name: 'date',
+              label: 'date dropdown',
+              placeholder: 'дд.мм.гггг',
+              pattern: '[0-9]{2}.[0-9]{2}.[0-9]{4}',
+              width: '150'
+            })
+          .form-elements__dropdown-3
+            +dropdown({
+              type: 'text',
+              name: 'date',
+              label: 'date dropdown',
+              placeholder: '19.08.2019',
+              width: '150'
+            })
+        .form-elements__dropdown-4
           +dropdown({
             type: 'text',
-            name: 'date',
-            label: 'date dropdown',
-            placeholder: '19.08.2019',
-            width: '150'
+            name: 'text',
+            label: 'filter date dropdown',
+            placeholder: '19 авг - 23 авг',
+            width: '266'
           })
-        +dropdown({
-          type: 'text',
-          name: 'text',
-          label: 'filter date dropdown',
-          placeholder: '19 авг - 23 авг',
-          width: '266'
-        })
-        +subscription({
-          label: 'subscription text field',
-          width: '266'
-        })
+        .form-elements__subscription
+          +subscription({
+            label: 'subscription text field',
+            width: '266'
+          })
+        .form-elements__dropdown-5
+          +dropdown({
+            type: 'text',
+            name: 'text',
+            label: 'dropdown',
+            placeholder: '2 спальни, 2 кровати...',
+            width: '266'
+          })
+        .form-elements__dropdown-expanded-1
+          +dropdown({
+            type: 'text',
+            name: 'text',
+            label: 'dropdown',
+            placeholder: '2 спальни, 2 кровати...',
+            width: '266'
+          })
 
     script(src='./main.js')
